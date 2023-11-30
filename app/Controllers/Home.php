@@ -2,11 +2,12 @@
 
 namespace App\Controllers;
 
+use App\Models\modelLibros;
 use App\Models\portadaModel;
 
 class Home extends BaseController
 {
-    public function index(): string
+    /*  public function index(): string
     {
         return view('welcome_message');
     }
@@ -25,5 +26,31 @@ class Home extends BaseController
         ];
 
         return view('layoutAdmin/header') . view('portada', $data) . view('layoutAdmin/footer');
+    } */
+
+    public function index(): string
+    {
+        $navbar = view('Usuarios/layoutsUsuarios/navbar');
+
+        $data = [
+            "navbar" => $navbar
+        ];
+
+        return view('Usuarios/layoutsUsuarios/header') . view('Usuarios/main', $data) . view('Usuarios/layoutsUsuarios/footer');
+    }
+
+    public function Listarlibros(): string
+    {
+        $navbar = view('Usuarios/layoutsUsuarios/navbar');
+        $objLibros = new modelLibros();
+
+        $datos['tbl_libros'] = $objLibros->ListarLibros();
+
+        $data = [
+            "navbar" => $navbar,
+            "datos" => $datos
+        ];
+
+        return view('Usuarios/layoutsUsuarios/header') . view('Usuarios/libros', $data) . view('Usuarios/layoutsUsuarios/footer');
     }
 }

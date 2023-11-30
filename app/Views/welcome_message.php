@@ -9,7 +9,6 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
 
     <!-- STYLES -->
-
     <style {csp-style-nonce}>
         * {
             transition: background-color 300ms ease, color 300ms ease;
@@ -117,7 +116,7 @@
             padding: 1rem 1.75rem 1.75rem 1.75rem;
             text-align: center;
             justify-content: center;
-            
+
         }
 
         header .heroe h1 {
@@ -268,8 +267,12 @@
     <!-- CONTENT -->
 
     <section style="height: 52vh;">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 mb-0"><dotlottie-player src="https://lottie.host/0d58aa96-81ac-4a35-88e1-f26e5f178a48/vlyif6zUkd.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+            </div>
+        </div>
     </section>
-
 
     <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
 
@@ -295,7 +298,8 @@
         }
     </script>
 
-    <!-- -->
+    
+
 
 </body>
 

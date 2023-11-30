@@ -8,13 +8,13 @@ class loginController extends BaseController
 {
     public function login()
     {
-        return view('layoutAdmin/header') .view('Admin/login'). view('layoutAdmin/footer');
+        return view('Admin/layoutAdmin/header') .view('Admin/login'). view('Admin/layoutAdmin/footer');
     }
 
     public function inicio()
     {
         // Cargar la vista del navbar
-        $aside = view('layoutAdmin/menu');
+        $aside = view('Admin/layoutAdmin/menu');
 
         $email = $_GET['email'];
         $pass = $_GET['pass'];
@@ -26,6 +26,6 @@ class loginController extends BaseController
             "pass" => $pass
         ];
 
-        return view('layoutAdmin/header') . view('blank', $data) . view('layoutAdmin/footer');
+        return view('Admin/layoutAdmin/header') . view('blank', $data) . view('Admin/layoutAdmin/footer');
     }
 }
