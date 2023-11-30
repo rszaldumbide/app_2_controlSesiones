@@ -1,0 +1,44 @@
+CRITICAL - 2023-11-30 00:01:12 --> Undefined variable $email
+in APPPATH\Views\blank.php on line 10.
+ 1 APPPATH\Views\blank.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\app2\\app\\Views\\blank.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app2\\app\\Views\\blank.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('blank', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('blank', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->portada()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:01:25 --> Array to string conversion
+in APPPATH\Views\blank.php on line 14.
+ 1 APPPATH\Views\blank.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\app2\\app\\Views\\blank.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app2\\app\\Views\\blank.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('blank', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('blank', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->portada()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:04:45 --> Undefined variable $email
+in APPPATH\Views\blank.php on line 10.
+ 1 APPPATH\Views\blank.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\app2\\app\\Views\\blank.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app2\\app\\Views\\blank.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('blank', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('blank', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->portada()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:04:46 --> Undefined variable $email
+in APPPATH\Views\blank.php on line 10.
+ 1 APPPATH\Views\blank.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\app2\\app\\Views\\blank.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app2\\app\\Views\\blank.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('blank', [], true)
+ 5 APPPATH\Controllers\Home.php(26): view('blank', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->portada()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
