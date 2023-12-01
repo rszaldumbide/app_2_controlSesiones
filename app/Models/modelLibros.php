@@ -18,9 +18,11 @@ class modelLibros extends Model
             ->findAll();
     }
 
-    public function BuscarLibros($codigo){
-        return $this->select('tbl_libros.*')
+    public function BuscarLibros($codigo)
+    {
+        return $this->select('tbl_libros.*, tbl_tema.tem_tema')
             ->where('tbl_libros.lib_codigo', $codigo)
-            ->findAll();
+            ->join('tbl_tema', 'tbl_tema.tem_id = tbl_libros.tem_id')
+            ->first();
     }
 }

@@ -20,7 +20,7 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Bienvenido de nuevo!</h1>
                                     </div>
-                                    <form class="user" action="<?php echo base_url() . "inicio" ?>" method="GET" enctype="multipart/form-data">
+                                    <form class="user" action="<?php echo base_url() . "inicio" ?>" method="POST" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user" name="email" placeholder="Ingresa tu correo electrónico">
                                         </div>

@@ -16,8 +16,8 @@ class loginController extends BaseController
         // Cargar la vista del navbar
         $aside = view('Admin/layoutAdmin/menu');
 
-        $email = $_GET['email'];
-        $pass = $_GET['pass'];
+        $email = $_POST['email'];
+        $pass = $_POST['pass'];
 
         // Pasar la vista del navbar como un atributo a la vista principal
         $data = [

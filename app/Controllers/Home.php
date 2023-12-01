@@ -53,4 +53,20 @@ class Home extends BaseController
 
         return view('Usuarios/layoutsUsuarios/header') . view('Usuarios/libros', $data) . view('Usuarios/layoutsUsuarios/footer');
     }
+
+    public function BuscarLibros()
+    {
+        $navbar = view('Usuarios/layoutsUsuarios/navbar');
+        $objLibros = new modelLibros();
+        $codigo = $_POST['buscarCodigo'];
+
+        $libroEncontrado = $objLibros->BuscarLibros($codigo);
+
+        $data = [
+            "navbar" => $navbar,
+            "libroEncontrado" => $libroEncontrado,
+        ];
+
+        return view('Usuarios/layoutsUsuarios/header') . view('Usuarios/busqueda', $data) . view('Usuarios/layoutsUsuarios/footer');
+    }
 }

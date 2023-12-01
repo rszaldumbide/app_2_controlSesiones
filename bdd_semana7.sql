@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-11-2023 a las 11:43:51
+-- Tiempo de generación: 01-12-2023 a las 08:01:39
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -65,7 +65,10 @@ INSERT INTO `tbl_libros` (`lib_id`, `tem_id`, `lib_titulo`, `lib_codigo`, `lib_p
 (1, 1, 'Genius Makers', 121212, 15, 'Genius Makers es un libro escrito por Cade Metz y publicado en marzo del 2021. Ha sido recomendado por la revista Forbes como uno de los libros más importantes para leer sobre IA en el presente año. Este libro cuenta, de una forma amigable y divertida, cómo se constituyó el campo de la Inteligencia Artificial de hoy en día.\r\nEl libro habla sobre las bases de la IA y se fundamenta con anécdotas acerca de cómo fue el desarrollo del Deep Learning hasta como lo conocemos el día de hoy.', 1),
 (2, 1, 'Proyectos de Inteligencia Artificial', 131313, 16, 'Proyectos de Inteligencia Artificial es una obra publicada en 2020 por Jaime Miralles Solé. A diferencia de muchos libros que vemos en el mercado que se han preocupado por definir los conceptos relacionados a la IA, habla de su trayectoria desde el siglo pasado y qué pasará con ella en un futuro.\r\n\r\nProyectos de Inteligencia Artificial se enfoca en presentar cómo es el proceso para desarrollar un proyecto de IA en una empresa, qué metodologías se utilizan, los recursos materiales e intelectuales y quién debería estar presente en este proceso, es decir, qué perfiles necesitas para desarrollar tu proyecto IA empresarial.', 1),
 (3, 2, 'Reinforcement learning', 50520, 20, 'Aunque suene un poco extraño a primera vista, el aprendizaje de refuerzo funciona a través de un sistema de recompensas y de castigos, a partir del cual el programa al que se está entrenando puede aprender de la experiencia para condicionar su funcionamiento.\r\n\r\nTal como si se tratara de seres humanos, este tipo de Machine Learning está basado en los principios de la psicología conductista.', 1),
-(4, 2, 'Redes Neuronales & Deep Learning', 261547, 25, 'En este libro se presentan el origen, la motivación, la inspiración, la evolución y las aplicaciones de las redes neuronales artificiales. Se realiza especial hincapié en las técnicas algorítmicas que permiten el entrenamiento de redes neuronales (esto es, los algoritmos que se utilizan para que las redes aprendan y los distintos problemas que hay que solventar para que las redes neuronales artificiales funcionen correctamente en la práctica). También se detallan múltiples técnicas de tipo heurístico que se han propuesto recientemente para construir redes neuronales \"profundas\" (el origen del término deep learning). Aunque las redes neuronales artificiales existían desde los orígenes de la I.A., la eclosión del deep learning se produjo, ya entrado el siglo XXI, tras conseguir igualar, cuando no mejorar, el rendimiento de los seres humanos en la resolución de tareas que, hasta hace poco, se consideraban de nuestro dominio exclusivo.', 1);
+(4, 2, 'Redes Neuronales & Deep Learning', 261547, 25, 'En este libro se presentan el origen, la motivación, la inspiración, la evolución y las aplicaciones de las redes neuronales artificiales. Se realiza especial hincapié en las técnicas algorítmicas que permiten el entrenamiento de redes neuronales (esto es, los algoritmos que se utilizan para que las redes aprendan y los distintos problemas que hay que solventar para que las redes neuronales artificiales funcionen correctamente en la práctica). También se detallan múltiples técnicas de tipo heurístico que se han propuesto recientemente para construir redes neuronales \"profundas\" (el origen del término deep learning). Aunque las redes neuronales artificiales existían desde los orígenes de la I.A., la eclosión del deep learning se produjo, ya entrado el siglo XXI, tras conseguir igualar, cuando no mejorar, el rendimiento de los seres humanos en la resolución de tareas que, hasta hace poco, se consideraban de nuestro dominio exclusivo.', 1),
+(5, 5, 'Algoritmos De Grooking', 25012, 11, 'Este libro utiliza Python como lenguaje de programación. No te cansarás de leer este libro ya que el autor se asegura de explicar todo de una manera interesante.\r\n\r\nLa información que aprenda de este libro lo ayudará a resolver problemas comunes de programación de computadoras. Más de 400 imágenes en este libro ayudan a aclarar de manera efectiva cada concepto de estructura de datos.', 1),
+(6, 3, 'Html, CSS y JS para principiantes', 2201, 25, 'Sumérgete en el fascinante mundo del desarrollo web. ¿Siempre has soñado con crear sitios web impresionantes? El libro \"Desarrollo web: HTML, CSS y JavaScript para principiantes\" es tu boleto de entrada al mundo de la programación.\r\n\r\nImagina poder construir sitios web hermosos y funcionales desde cero, dominando los lenguajes HTML, CSS y JavaScript. Este libro te ofrece una guía completa y detallada que elevará tus conocimientos técnicos y habilidades de programación.\r\n\r\nAprende los conceptos fundamentales del desarrollo web, desde la estructura básica de una página HTML hasta el diseño y estilización con CSS. Comprende los principios de programación en JavaScript y descubre cómo agregar interactividad y funcionalidades dinámicas a tus sitios web.\r\n\r\nNo importa si eres un principiante total o ya tienes conocimientos básicos de programación, este libro está diseñado para hacer que el aprendizaje sea accesible y divertido para todos. Con ejemplos prácticos y ejercicios estimulantes, pod', 1),
+(7, 4, 'PHP POO: Aprende programación orientada a objetos ', 154123, 14, 'Este material ofrece al lector las bases para aprender programación orientada con PHP, un lenguaje que combina versatilidad, seguridad y facilidad de uso. De manera didáctica y paso a paso, se explica todo lo necesario para aprender POO. Esta guía te permitirá entender conceptos POO ocupadas en frameworks de renombre como Laravel, CodeIgniter, Symfony.', 1);
 
 -- --------------------------------------------------------
 
@@ -105,7 +108,10 @@ CREATE TABLE `tbl_tema` (
 
 INSERT INTO `tbl_tema` (`TEM_ID`, `TEM_TEMA`, `TEM_ESTADO`) VALUES
 (1, 'Inteligencia Artificial', 1),
-(2, 'Machine Learning', 1);
+(2, 'Machine Learning', 1),
+(3, 'Desarrollo Web', 1),
+(4, 'Programación Orientada a Objetos', 1),
+(5, 'Estructura de Datos', 1);
 
 --
 -- Índices para tablas volcadas
@@ -149,7 +155,7 @@ ALTER TABLE `tbl_contenido`
 -- AUTO_INCREMENT de la tabla `tbl_libros`
 --
 ALTER TABLE `tbl_libros`
-  MODIFY `lib_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `lib_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `tbl_portada`
@@ -161,7 +167,7 @@ ALTER TABLE `tbl_portada`
 -- AUTO_INCREMENT de la tabla `tbl_tema`
 --
 ALTER TABLE `tbl_tema`
-  MODIFY `TEM_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `TEM_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

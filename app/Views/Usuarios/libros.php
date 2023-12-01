@@ -11,15 +11,16 @@
                 <div class="row">
                     <div class="col-lg-6"></div>
                     <div class="col-lg-6">
-                        <form action="<?php echo base_url() . "buscar" ?>" method="GET" enctype="multipart/form-data">
+                        <form action="<?php echo base_url() . "buscar" ?>" method="POST" enctype="multipart/form-data">
                             <div class="input-group mb-3">
                                 <span class="input-group-text">Buscar libro por Código:</span>
-                                <input type="text" class="form-control" onkeypress="return validador(event);" placeholder="Search" id="buscarCodigo" name="buscarCodigo">
+                                <input type="text" class="form-control" onkeypress="return validador(event);" placeholder="Search" id="buscarCodigo" name="buscarCodigo" required>
                                 <button type="submit" class="btn" style="background-color: wheat;" id="btnEnviar" name="btnEnviar">🔎</button>
                             </div>
                         </form>
                     </div>
                 </div>
+
                 <div class="table-responsive">
                     <table class="table table-warning table-hover my-2">
                         <thead>
