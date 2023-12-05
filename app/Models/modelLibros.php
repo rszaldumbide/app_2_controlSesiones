@@ -13,22 +13,22 @@ class modelLibros extends Model
 
     public function ListarLibros()
     {
-        $query = $this->db->table('tbl_librostema lit')
-            ->select('lib.lib_id', 'lib.lib_titulo', 'lib.lib_codigo', 'lib.lib_precio', 'lib.lib_resumen', 'lib.lib_estado', 'tem.tem_id', 'tem.tem_tema', 'lit.lib_id', 'lit.tem_id')
-            ->join('tbl_libros lib', 'lit.lib_id = lib.lib_id')
-            ->join('tbl_tema tem', 'tem.tem_id = lit.tem_id')
-            ->get();
-
-        return $query->getResultArray();
+        $valor = $this->db->table('tbl_librostema lit'); //tabla intermedia
+        $valor->select('lib.lib_id, lib.lib_titulo, lib.lib_codigo, lib.lib_precio, lib.lib_resumen, lib.lib_estado, tem.tem_id, tem.tem_tema'); //selecciono todos los campos de todas las tablas que quiero
+        $valor->join('tbl_libros lib', 'lit.lib_id = lib.lib_id'); //join con la tabla estudiantes
+        $valor->join('tbl_tema tem', 'tem.tem_id = lit.tem_id'); //join con la tabla libros
+        $query = $valor->get(); //ejecutas
+        $respuesta = $query->getResultArray(); //te muestra los datos como array
+        return $respuesta;
     }
 
     public function ListarTemas()
     {
-        $query = $this->db->table('tbl_tema tem')
-            ->select('tem.tem_id, tem.tem_tema')
-            ->get();
-
-        return $query->getResultArray();
+        $valor = $this->db->table("tbl_tema");
+        $valor->select('tem_id, tem_tema');
+        $query = $valor->get(); //ejecutas
+        $respuesta = $query->getResultArray(); //te muestra los datos como array
+        return $respuesta;
     }
 
     public function BuscarLibros($codigo)

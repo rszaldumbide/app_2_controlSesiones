@@ -14,8 +14,8 @@
                             <label class="input-group-text" for="inputGroupSelect01">Ver Libros por tema:</label>
                             <select class="form-select" id="inputGroupSelect01">
                                 <option selected>Escoger uno</option>
-                                <?php foreach ($datos2['tbl_tema'] as $tema) : ?>
-                                    <option value="<?php echo $tema['tem_id']; ?>"><?php echo $tema['tem_tema']; ?></option>
+                                <?php foreach ($datos2 as $tema) : ?>
+                                    <option value="<?= $tema['tem_id']; ?>"><?= $tema['tem_tema']; ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
@@ -41,13 +41,13 @@
                             <th>Precio</th>
                         </thead>
                         <tbody>
-                            <?php foreach ($datos['tbl_libros'] as $libro) : ?>
+                            <?php foreach ($datos as $librotabla) : ?>
                                 <tr>
-                                    <td><?php echo $libro['lib_id']; ?></td>
-                                    <td><?php echo $libro['tem_tema']; ?></td>
-                                    <td><?php echo $libro['lib_titulo']; ?></td>
-                                    <td><?php echo $libro['lib_codigo']; ?></td>
-                                    <td>$<?php echo $libro['lib_precio']; ?></td>
+                                    <td>2<?php echo $librotabla['lib_id']; ?></td>
+                                    <td><?php echo $librotabla['tem_tema']; ?></td>
+                                    <td><?php echo $librotabla['lib_titulo']; ?></td>
+                                    <td><?php echo $librotabla['lib_codigo']; ?></td>
+                                    <td>$<?php echo $librotabla['lib_precio']; ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

@@ -7,7 +7,7 @@
     <div class="container">
         <div class="mt-5">
             <?php if ($libroEncontrado) : ?>
-                <h3 class="text-center text-dark">Información sobre '<?php echo $libroEncontrado['lib_titulo']; ?>'</h3>
+                <h3 class="text-center text-dark">Información sobre '<?= $libroEncontrado['lib_titulo']; ?>'</h3>
             <?php else : ?>
                 <h3 class="text-center text-dark">No se encontraron libros</h3>
                 <?php return; ?>
@@ -21,7 +21,7 @@
                             <div class="photo" style="background-image: url(https://picsum.photos/700/900)"></div>
                         </div>
                         <div class="description">
-                            <h1 class="mb-2"><?php echo $libroEncontrado['lib_titulo']; ?></h1>
+                            <h1 class="mb-2"><?= $libroEncontrado['lib_titulo']; ?></h1>
                             <div class="mb-2" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
                                 <h2><?php echo $libroEncontrado['tem_tema']; ?></h2>
                                 <h2># <?php echo $libroEncontrado['lib_codigo']; ?></h2>

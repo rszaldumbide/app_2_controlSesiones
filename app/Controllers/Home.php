@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Models\modelLibros;
-use App\Models\modelTema;
 
 class Home extends BaseController
 {
@@ -23,13 +22,13 @@ class Home extends BaseController
         $navbar = view('Usuarios/layoutsUsuarios/navbar');
         $objLibros = new modelLibros();
 
-        $datos['tbl_libros'] = $objLibros->ListarLibros();
-        $datos2['tbl_tema'] = $objLibros->ListarTemas();
+        $respuesta =$objLibros->ListarLibros();
+        $respuesta2 =$objLibros->ListarTemas();
 
         $data = [
             "navbar" => $navbar,
-            "datos" => $datos,
-            "datos2" => $datos2
+            "datos" => $respuesta,
+            "datos2" => $respuesta2
         ];
 
         return view('Usuarios/layoutsUsuarios/header') . view('Usuarios/libros', $data) . view('Usuarios/layoutsUsuarios/footer');
