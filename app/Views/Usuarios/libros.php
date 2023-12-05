@@ -9,7 +9,17 @@
             <div class="col-lg-12 text-center my-5">
                 <h2 class="my-3">Listar Libros de la base de datos</h2>
                 <div class="row">
-                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Ver Libros por tema:</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Escoger uno</option>
+                                <?php foreach ($datos2['tbl_tema'] as $tema) : ?>
+                                    <option value="<?php echo $tema['tem_id']; ?>"><?php echo $tema['tem_tema']; ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                    </div>
                     <div class="col-lg-6">
                         <form action="<?php echo base_url() . "buscar" ?>" method="POST" enctype="multipart/form-data">
                             <div class="input-group mb-3">
@@ -22,7 +32,7 @@
                 </div>
 
                 <div class="table-responsive">
-                    <table class="table table-warning table-hover my-2">
+                    <table id="tbl" class="table table-warning table-hover my-2">
                         <thead>
                             <th>Número</th>
                             <th>Tema</th>
@@ -43,6 +53,21 @@
                         </tbody>
                     </table>
                 </div>
+                <script>
+                    $(document).ready(function() {
+                        $('#tbl').DataTable({
+                            searching: false,
+                            paging: false, // Deshabilita la paginación
+                            lengthChange: false, // Deshabilita el control de las entradas por página
+                            info: false // Deshabilita el mensaje de información sobre las filas mostradas
+                        });
+                        // Agrega un filtro de temas mediante un select
+                        $('#inputGroupSelect01').on('change', function() {
+                            var selectedTema = $.fn.dataTable.util.escapeRegex($(this).val());
+                            table.column(1).search(selectedTema ? '^' + selectedTema + '$' : '', true, false).draw();
+                        });
+                    });
+                </script>
             </div>
         </div>
     </div>

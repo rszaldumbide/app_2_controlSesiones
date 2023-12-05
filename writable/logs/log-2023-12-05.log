@@ -1,0 +1,422 @@
+CRITICAL - 2023-12-05 00:05:20 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:05:21 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:06:13 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:06:15 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:08:56 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:08:57 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:08:57 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:08:58 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:08:58 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:14:49 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 00:18:04 --> mysqli_sql_exception: Not unique table/alias: 'tbl_tema' in C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_lib...', 0)
+#1 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_lib...')
+#2 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_lib...')
+#3 C:\xampp\htdocs\app_2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_lib...', Array, false)
+#4 C:\xampp\htdocs\app_2\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app_2\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\app_2\app\Models\modelTema.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\app_2\app\Controllers\Home.php(28): App\Models\modelTema->ListarTemas()
+#8 C:\xampp\htdocs\app_2\system\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+#9 C:\xampp\htdocs\app_2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\app_2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_2\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-05 00:18:04 --> Not unique table/alias: 'tbl_tema'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_libros`.*, `tbl_tema`.*, `tbl_librostema`.*
+FROM `tbl_tema`
+JOIN `tbl_librostema` ON `tbl_librostema`.`lib_id` = `tbl_libros`.`lib_id`
+JOIN `tbl_tema` ON `tbl_tema`.`tem_id` = `tbl_librostema`.`tem_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\modelTema.php(19): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(28): App\Models\modelTema->ListarTemas()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 00:18:15 --> mysqli_sql_exception: Not unique table/alias: 'tbl_tema' in C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_lib...', 0)
+#1 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_lib...')
+#2 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_lib...')
+#3 C:\xampp\htdocs\app_2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_lib...', Array, false)
+#4 C:\xampp\htdocs\app_2\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app_2\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\app_2\app\Models\modelTema.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\app_2\app\Controllers\Home.php(28): App\Models\modelTema->ListarTemas()
+#8 C:\xampp\htdocs\app_2\system\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+#9 C:\xampp\htdocs\app_2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\app_2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_2\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-05 00:18:15 --> Not unique table/alias: 'tbl_tema'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_libros`.*, `tbl_tema`.*, `tbl_librostema`.*
+FROM `tbl_tema`
+JOIN `tbl_librostema` ON `tbl_librostema`.`lib_id` = `tbl_libros`.`lib_id`
+JOIN `tbl_tema` ON `tbl_tema`.`tem_id` = `tbl_librostema`.`tem_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\modelTema.php(19): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(28): App\Models\modelTema->ListarTemas()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 00:18:40 --> mysqli_sql_exception: Not unique table/alias: 'tbl_tema' in C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_lib...', 0)
+#1 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_lib...')
+#2 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_lib...')
+#3 C:\xampp\htdocs\app_2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_lib...', Array, false)
+#4 C:\xampp\htdocs\app_2\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app_2\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\app_2\app\Models\modelTema.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\app_2\app\Controllers\Home.php(28): App\Models\modelTema->ListarTemas()
+#8 C:\xampp\htdocs\app_2\system\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+#9 C:\xampp\htdocs\app_2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\app_2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_2\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-05 00:18:40 --> Not unique table/alias: 'tbl_tema'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_libros`.*, `tbl_tema`.`tem_tema`, `tbl_librostema`.*
+FROM `tbl_tema`
+JOIN `tbl_librostema` ON `tbl_librostema`.`lib_id` = `tbl_libros`.`lib_id`
+JOIN `tbl_tema` ON `tbl_tema`.`tem_id` = `tbl_librostema`.`tem_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\modelTema.php(19): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(28): App\Models\modelTema->ListarTemas()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:19:47 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:19:48 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:20:31 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:20:32 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:25:40 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:32:39 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:36:48 --> Undefined variable $datos2
+in APPPATH\Views\Usuarios\libros.php on line 17.
+ 1 APPPATH\Views\Usuarios\libros.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos2', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:36:50 --> Undefined variable $datos2
+in APPPATH\Views\Usuarios\libros.php on line 17.
+ 1 APPPATH\Views\Usuarios\libros.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos2', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:36:58 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 39.
+ 1 APPPATH\Views\Usuarios\libros.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:37:41 --> Call to undefined method App\Models\modelLibros::ListarTemas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Home.php(28): CodeIgniter\Model->__call('ListarTemas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:44:06 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:47:27 --> Undefined array key "lib_id"
+in APPPATH\Views\Usuarios\libros.php on line 46.
+ 1 APPPATH\Views\Usuarios\libros.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lib_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 46)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:47:28 --> Undefined array key "lib_id"
+in APPPATH\Views\Usuarios\libros.php on line 46.
+ 1 APPPATH\Views\Usuarios\libros.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lib_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 46)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:49:06 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 47.
+ 1 APPPATH\Views\Usuarios\libros.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:49:16 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 47.
+ 1 APPPATH\Views\Usuarios\libros.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:49:17 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 47.
+ 1 APPPATH\Views\Usuarios\libros.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:50:03 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 47.
+ 1 APPPATH\Views\Usuarios\libros.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:50:04 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 47.
+ 1 APPPATH\Views\Usuarios\libros.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:50:04 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 47.
+ 1 APPPATH\Views\Usuarios\libros.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:50:27 --> Undefined array key "tem.tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 47.
+ 1 APPPATH\Views\Usuarios\libros.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem.tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 00:50:28 --> Undefined array key "tem.tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 47.
+ 1 APPPATH\Views\Usuarios\libros.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem.tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

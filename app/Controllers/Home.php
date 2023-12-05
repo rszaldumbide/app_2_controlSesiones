@@ -3,31 +3,10 @@
 namespace App\Controllers;
 
 use App\Models\modelLibros;
-use App\Models\portadaModel;
+use App\Models\modelTema;
 
 class Home extends BaseController
 {
-    /*  public function index(): string
-    {
-        return view('welcome_message');
-    }
-
-    public function portada(): string
-    {
-        $objPortada = new portadaModel();
-
-        // Cargar la vista del navbar
-        $aside = view('layoutAdmin/menu');
-        $datos['tbl_portada'] = $objPortada->findAll();
-
-        $data = [
-            "menu" => $aside,
-            "datos" => $datos
-        ];
-
-        return view('layoutAdmin/header') . view('portada', $data) . view('layoutAdmin/footer');
-    } */
-
     public function index(): string
     {
         $navbar = view('Usuarios/layoutsUsuarios/navbar');
@@ -45,10 +24,12 @@ class Home extends BaseController
         $objLibros = new modelLibros();
 
         $datos['tbl_libros'] = $objLibros->ListarLibros();
+        $datos2['tbl_tema'] = $objLibros->ListarTemas();
 
         $data = [
             "navbar" => $navbar,
-            "datos" => $datos
+            "datos" => $datos,
+            "datos2" => $datos2
         ];
 
         return view('Usuarios/layoutsUsuarios/header') . view('Usuarios/libros', $data) . view('Usuarios/layoutsUsuarios/footer');

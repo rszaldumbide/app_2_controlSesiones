@@ -1,0 +1,923 @@
+ERROR - 2023-12-04 22:00:38 --> mysqli_sql_exception: Unknown column 'tbl_librostema.tema_id' in 'on clause' in C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_lib...', 0)
+#1 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_lib...')
+#2 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_lib...')
+#3 C:\xampp\htdocs\app_2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_lib...', Array, false)
+#4 C:\xampp\htdocs\app_2\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app_2\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\app_2\app\Models\modelLibros.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\app_2\app\Controllers\Home.php(47): App\Models\modelLibros->ListarLibros()
+#8 C:\xampp\htdocs\app_2\system\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+#9 C:\xampp\htdocs\app_2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\app_2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_2\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-04 22:00:38 --> Unknown column 'tbl_librostema.tema_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_libros`.*, `tbl_tema`.`tem_tema`, `tbl_librostema`.*
+FROM `tbl_libros`
+JOIN `tbl_librostema` ON `tbl_librostema`.`lib_id` = `tbl_libros`.`lib_id`
+JOIN `tbl_tema` ON `tbl_tema`.`tem_id` = `tbl_librostema`.`tema_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\modelLibros.php(19): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(47): App\Models\modelLibros->ListarLibros()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 22:03:01 --> mysqli_sql_exception: Unknown column 'tbl_libros.tem_id' in 'on clause' in C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_lib...', 0)
+#1 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_lib...')
+#2 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_lib...')
+#3 C:\xampp\htdocs\app_2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_lib...', Array, false)
+#4 C:\xampp\htdocs\app_2\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app_2\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\app_2\app\Models\modelLibros.php(27): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\app_2\app\Controllers\Home.php(63): App\Models\modelLibros->BuscarLibros('121212')
+#8 C:\xampp\htdocs\app_2\system\CodeIgniter.php(942): App\Controllers\Home->BuscarLibros()
+#9 C:\xampp\htdocs\app_2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\app_2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_2\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-04 22:03:01 --> Unknown column 'tbl_libros.tem_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_libros`.*, `tbl_tema`.`tem_tema`
+FROM `tbl_libros`
+JOIN `tbl_tema` ON `tbl_tema`.`tem_id` = `tbl_libros`.`tem_id`
+WHERE `tbl_libros`.`lib_codigo` = :tbl_libros.lib_codigo:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\modelLibros.php(27): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(63): App\Models\modelLibros->BuscarLibros('121212')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->BuscarLibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 22:57:20 --> Undefined variable $temas
+in APPPATH\Views\Usuarios\libros.php on line 17.
+ 1 APPPATH\Views\Usuarios\libros.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temas', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(54): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:04:34 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:05:24 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:05:26 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:05:26 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:05:27 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:05:27 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:05:27 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:05:37 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:06:51 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:06:51 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:06:52 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:08:01 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:08:32 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:08:52 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:10:12 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:12:38 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:12:39 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:12:39 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:12:39 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:12:48 --> Undefined array key "tbl_tema"
+in APPPATH\Views\Usuarios\libros.php on line 17.
+ 1 APPPATH\Views\Usuarios\libros.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tbl_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:16:45 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:18:18 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:18:19 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:19:02 --> Call to undefined method App\Models\modelTema::ListarTemas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Home.php(28): CodeIgniter\Model->__call('ListarTemas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:19:04 --> Call to undefined method App\Models\modelTema::ListarTemas
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Home.php(28): CodeIgniter\Model->__call('ListarTemas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:19:52 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:20:06 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(39): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 23:20:12 --> mysqli_sql_exception: Unknown column 'tbl_tema' in 'field list' in C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_tem...', 0)
+#1 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_tem...')
+#2 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_tem...')
+#3 C:\xampp\htdocs\app_2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tem...', Array, false)
+#4 C:\xampp\htdocs\app_2\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app_2\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\app_2\app\Models\modelTema.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\app_2\app\Controllers\Home.php(28): App\Models\modelTema->ListarTemas()
+#8 C:\xampp\htdocs\app_2\system\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+#9 C:\xampp\htdocs\app_2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\app_2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_2\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-04 23:20:12 --> Unknown column 'tbl_tema' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tema`
+FROM `tbl_tema`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\modelTema.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(28): App\Models\modelTema->ListarTemas()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:23:54 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:24:19 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:24:20 --> Undefined array key "tem_tema"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_tema"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:25:57 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:25:58 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:25:59 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:25:59 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:25:59 --> Undefined array key "tem_id"
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tem_id"', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 23:27:32 --> mysqli_sql_exception: Unknown table 'bdd_semana7.tbl_tema' in C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_tem...', 0)
+#1 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_tem...')
+#2 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_tem...')
+#3 C:\xampp\htdocs\app_2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tem...', Array, false)
+#4 C:\xampp\htdocs\app_2\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app_2\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\app_2\app\Models\modelLibros.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\app_2\app\Controllers\Home.php(28): App\Models\modelLibros->listarTemas()
+#8 C:\xampp\htdocs\app_2\system\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+#9 C:\xampp\htdocs\app_2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\app_2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_2\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-04 23:27:32 --> Unknown table 'bdd_semana7.tbl_tema'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tema`.*
+FROM `tbl_libros`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\modelLibros.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(28): App\Models\modelLibros->listarTemas()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 23:30:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as `libros`, `tbl_tema`.* as `temas`, `tbl_librostema`.* as `librostema`
+FROM...' at line 1 in C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_lib...', 0)
+#1 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_lib...')
+#2 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_lib...')
+#3 C:\xampp\htdocs\app_2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_lib...', Array, false)
+#4 C:\xampp\htdocs\app_2\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app_2\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\app_2\app\Models\modelLibros.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\app_2\app\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+#8 C:\xampp\htdocs\app_2\system\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+#9 C:\xampp\htdocs\app_2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\app_2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_2\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-04 23:30:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as `libros`, `tbl_tema`.* as `temas`, `tbl_librostema`.* as `librostema`
+FROM...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_libros`.* as `libros`, `tbl_tema`.* as `temas`, `tbl_librostema`.* as `librostema`
+FROM `tbl_libros`
+JOIN `librostema` ON `librostema`.`lib_id` = `libros`.`lib_id`
+JOIN `temas` ON `temas`.`tem_id` = `librostema`.`tem_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\modelLibros.php(19): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 23:31:52 --> mysqli_sql_exception: Unknown table 'bdd_semana7.tbl_tema' in C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_tem...', 0)
+#1 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_tem...')
+#2 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_tem...')
+#3 C:\xampp\htdocs\app_2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tem...', Array, false)
+#4 C:\xampp\htdocs\app_2\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app_2\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\app_2\app\Models\modelLibros.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\app_2\app\Controllers\Home.php(28): App\Models\modelLibros->listarTemas()
+#8 C:\xampp\htdocs\app_2\system\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+#9 C:\xampp\htdocs\app_2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\app_2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_2\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-04 23:31:52 --> Unknown table 'bdd_semana7.tbl_tema'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tema`.*
+FROM `tbl_libros`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\modelLibros.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(28): App\Models\modelLibros->listarTemas()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 23:32:06 --> mysqli_sql_exception: Unknown column 'tbl_tema' in 'field list' in C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_tem...', 0)
+#1 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_tem...')
+#2 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_tem...')
+#3 C:\xampp\htdocs\app_2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tem...', Array, false)
+#4 C:\xampp\htdocs\app_2\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app_2\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\app_2\app\Models\modelLibros.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\app_2\app\Controllers\Home.php(28): App\Models\modelLibros->listarTemas()
+#8 C:\xampp\htdocs\app_2\system\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+#9 C:\xampp\htdocs\app_2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\app_2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_2\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-04 23:32:06 --> Unknown column 'tbl_tema' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tema`
+FROM `tbl_libros`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\modelLibros.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(28): App\Models\modelLibros->listarTemas()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 23:32:16 --> mysqli_sql_exception: Unknown table 'bdd_semana7.tbl_tema' in C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\app_2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_tem...', 0)
+#1 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_tem...')
+#2 C:\xampp\htdocs\app_2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_tem...')
+#3 C:\xampp\htdocs\app_2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tem...', Array, false)
+#4 C:\xampp\htdocs\app_2\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app_2\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\app_2\app\Models\modelLibros.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\app_2\app\Controllers\Home.php(28): App\Models\modelLibros->listarTemas()
+#8 C:\xampp\htdocs\app_2\system\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+#9 C:\xampp\htdocs\app_2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\app_2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_2\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-04 23:32:16 --> Unknown table 'bdd_semana7.tbl_tema'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tema`.*
+FROM `tbl_libros`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\modelLibros.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Home.php(28): App\Models\modelLibros->listarTemas()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:33:42 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:34:28 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:34:31 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:34:50 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:34:52 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:34:59 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:35:04 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:35:55 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:35:56 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:35:56 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:35:57 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:35:57 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:35:57 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:47:34 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:47:44 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:04 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:04 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:06 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:06 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:06 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:48:06 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:52:34 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:52:35 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:52:35 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 23:53:10 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\modelLibros.php(12): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Controllers\Home.php(27): App\Models\modelLibros->ListarLibros()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
