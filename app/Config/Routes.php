@@ -11,3 +11,4 @@ $routes->get('/', 'Home::index');
 $routes->get('/portada', 'Home::portada');
 $routes->get('/libros', 'Home::Listarlibros');
 $routes->post('/buscar', 'Home::BuscarLibros');
+$routes->post('/librosPorTema', 'Home::verXTema');

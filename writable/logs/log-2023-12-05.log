@@ -530,3 +530,100 @@ in APPPATH\Views\Usuarios\busqueda.php on line 10.
  7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 22:04:49 --> Undefined variable $datos2
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos2', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(66): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->verXTema()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 22:06:02 --> Undefined variable $respuesta2
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $respuesta2', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(66): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->verXTema()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 22:06:03 --> Undefined variable $respuesta2
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $respuesta2', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 22:06:08 --> Undefined variable $respuesta2
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $respuesta2', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(34): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->Listarlibros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 22:06:17 --> Undefined variable $datos2
+in APPPATH\Views\Usuarios\libros.php on line 18.
+ 1 APPPATH\Views\Usuarios\libros.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos2', 'C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app_2\\app\\Views\\Usuarios\\libros.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Usuarios/libros', [], true)
+ 5 APPPATH\Controllers\Home.php(66): view('Usuarios/libros', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->verXTema()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 22:53:42 --> Undefined array key "selectTema"
+in APPPATH\Controllers\Home.php on line 57.
+ 1 APPPATH\Controllers\Home.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "selectTema"', 'C:\\xampp\\htdocs\\app_2\\app\\Controllers\\Home.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->verXTema()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 22:53:45 --> Undefined array key "selectTema"
+in APPPATH\Controllers\Home.php on line 57.
+ 1 APPPATH\Controllers\Home.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "selectTema"', 'C:\\xampp\\htdocs\\app_2\\app\\Controllers\\Home.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->verXTema()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 23:04:23 --> Undefined array key "selectTema"
+in APPPATH\Controllers\Home.php on line 57.
+ 1 APPPATH\Controllers\Home.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "selectTema"', 'C:\\xampp\\htdocs\\app_2\\app\\Controllers\\Home.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->verXTema()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 23:04:28 --> Undefined array key "selectTema"
+in APPPATH\Controllers\Home.php on line 57.
+ 1 APPPATH\Controllers\Home.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "selectTema"', 'C:\\xampp\\htdocs\\app_2\\app\\Controllers\\Home.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->verXTema()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 23:04:30 --> Undefined array key "selectTema"
+in APPPATH\Controllers\Home.php on line 57.
+ 1 APPPATH\Controllers\Home.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "selectTema"', 'C:\\xampp\\htdocs\\app_2\\app\\Controllers\\Home.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->verXTema()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 23:27:01 --> Undefined array key "selectTema"
+in APPPATH\Controllers\Home.php on line 57.
+ 1 APPPATH\Controllers\Home.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "selectTema"', 'C:\\xampp\\htdocs\\app_2\\app\\Controllers\\Home.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->verXTema()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

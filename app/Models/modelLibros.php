@@ -39,4 +39,16 @@ class modelLibros extends Model
             ->join('tbl_tema', 'tbl_tema.tem_id = tbl_librostema.tem_id')
             ->first();
     }
+
+    public function verLibrosXTema($temaID)
+    {
+        $valor = $this->db->table('tbl_librostema lit'); //tabla intermedia
+        $valor->select('lib.lib_id, lib.lib_titulo, lib.lib_codigo, lib.lib_precio, lib.lib_resumen, lib.lib_estado, tem.tem_id, tem.tem_tema');
+        $valor->join('tbl_libros lib', 'lit.lib_id = lib.lib_id');
+        $valor->join('tbl_tema tem', 'tem.tem_id = lit.tem_id');
+        $valor->where('tem.tem_id', $temaID); // Filtrar por el tema seleccionado
+        $query = $valor->get();
+        $respuesta = $query->getResultArray();
+        return $respuesta;
+    }
 }

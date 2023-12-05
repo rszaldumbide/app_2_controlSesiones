@@ -9,7 +9,7 @@
             <div class="col-lg-12 text-center my-5">
                 <h2 class="my-3">Listar Libros de la base de datos</h2>
                 <div class="row">
-                    <div class="col-lg-6">
+                <div class="col-lg-6">
                         <form action="<?php echo base_url() . "librosPorTema" ?>" method="POST" enctype="multipart/form-data">
                             <div class="input-group mb-3">
                                 <label class="input-group-text" for="selectTema">Ver Libros por tema:</label>

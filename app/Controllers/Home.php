@@ -22,8 +22,8 @@ class Home extends BaseController
         $navbar = view('Usuarios/layoutsUsuarios/navbar');
         $objLibros = new modelLibros();
 
-        $respuesta =$objLibros->ListarLibros();
-        $respuesta2 =$objLibros->ListarTemas();
+        $respuesta = $objLibros->ListarLibros();
+        $respuesta2 = $objLibros->ListarTemas();
 
         $data = [
             "navbar" => $navbar,
@@ -48,5 +48,29 @@ class Home extends BaseController
         ];
 
         return view('Usuarios/layoutsUsuarios/header') . view('Usuarios/busqueda', $data) . view('Usuarios/layoutsUsuarios/footer');
+    }
+
+    public function verXTema()
+    {
+        $navbar = view('Usuarios/layoutsUsuarios/navbar');
+        $objLibros = new modelLibros();
+
+        $librosXTema = $_POST['selectTema'];
+
+        if ($librosXTema == "todos") {
+            $respuesta = $objLibros->ListarLibros();
+        } else {
+            $respuesta = $objLibros->verLibrosXTema($librosXTema);
+        }
+
+        $respuesta2 = $objLibros->ListarTemas();
+
+        $data = [
+            "navbar" => $navbar,
+            "datos" => $respuesta,
+            "datos2" => $respuesta2
+        ];
+
+        return view('Usuarios/layoutsUsuarios/header') . view('Usuarios/librosxtema', $data) . view('Usuarios/layoutsUsuarios/footer');
     }
 }
