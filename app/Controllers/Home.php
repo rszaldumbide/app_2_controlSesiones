@@ -71,6 +71,6 @@ class Home extends BaseController
             "datos2" => $respuesta2
         ];
 
-        return view('Usuarios/layoutsUsuarios/header') . view('Usuarios/librosxtema', $data) . view('Usuarios/layoutsUsuarios/footer');
+        return view('Usuarios/layoutsUsuarios/header') . view('Usuarios/libros', $data) . view('Usuarios/layoutsUsuarios/footer');
     }
 }

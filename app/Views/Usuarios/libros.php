@@ -34,7 +34,7 @@
                     </div>
                 </div>
 
-                <div class="table-responsive">
+                <div class="table-responsive" id="tablaLibros">
                     <table id="tbl" class="table table-warning table-hover my-2">
                         <thead>
                             <th>Número</th>
@@ -62,6 +62,34 @@
                                 paging: true, // Deshabilita la paginación
                                 lengthChange: false, // Deshabilita el control de las entradas por página
                                 info: true, // Deshabilita el mensaje de información sobre las filas mostradas
+                                "language": {
+                                    "sZeroRecords": "No se encontraron resultados",
+                                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                                    "oPaginate": {
+                                        "sFirst": "Primero",
+                                        "sLast": "Último",
+                                        "sNext": "Siguiente",
+                                        "sPrevious": "Anterior"
+                                    },
+                                }
+                            });
+                        });
+                        // Agregar evento change al select
+                        $("#selectTema").change(function() {
+                            // Enviar la petición Ajax al controlador
+                            $.ajax({
+                                type: "POST",
+                                url: "<?php echo base_url() . 'verXTema'; ?>",
+                                data: {
+                                    selectTema: $(this).val()
+                                },
+                                success: function(response) {
+                                    // Actualizar la tabla con los nuevos datos recibidos
+                                    $("#tablaLibros").html(response);
+                                }
                             });
                         });
                     </script>
