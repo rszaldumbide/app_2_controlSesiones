@@ -55,16 +55,6 @@
                             <?php endforeach; ?>
                         </tbody>
                     </table>
-                    <script>
-                        $(document).ready(function() {
-                            $("#tbl").DataTable({
-                                searching: false,
-                                paging: true, // Deshabilita la paginación
-                                lengthChange: false, // Deshabilita el control de las entradas por página
-                                info: true, // Deshabilita el mensaje de información sobre las filas mostradas
-                            });
-                        });
-                    </script>
                 </div>
             </div>
         </div>

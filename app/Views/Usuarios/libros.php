@@ -10,7 +10,7 @@
                 <h2 class="my-3">Listar Libros de la base de datos</h2>
                 <div class="row">
                     <div class="col-lg-6">
-                        <form action="<?php echo base_url() . "librosPorTema" ?>" method="POST" enctype="multipart/form-data">
+                        <form action="<?php echo base_url() . "librosPorTema" ?>" method="GET" enctype="multipart/form-data">
                             <div class="input-group mb-3">
                                 <label class="input-group-text" for="selectTema">Ver Libros por tema:</label>
                                 <select class="form-select" id="selectTema" name="selectTema">
@@ -19,9 +19,10 @@
                                         <option value="<?= $tema['tem_id']; ?>"><?= $tema['tem_tema']; ?></option>
                                     <?php endforeach; ?>
                                 </select>
-                                <button type="submit" class="btn" style="background-color: wheat;" id="btnEnviar" name="btnEnviar">👽</button>
+                                <button type="submit" class="btn" style="background-color: wheat;">👽</button>
                             </div>
                         </form>
+                        
                     </div>
                     <div class="col-lg-6">
                         <form action="<?php echo base_url() . "buscar" ?>" method="POST" enctype="multipart/form-data">
@@ -55,44 +56,6 @@
                             <?php endforeach; ?>
                         </tbody>
                     </table>
-                    <script>
-                        $(document).ready(function() {
-                            $("#tbl").DataTable({
-                                searching: false,
-                                paging: true, // Deshabilita la paginación
-                                lengthChange: false, // Deshabilita el control de las entradas por página
-                                info: true, // Deshabilita el mensaje de información sobre las filas mostradas
-                                "language": {
-                                    "sZeroRecords": "No se encontraron resultados",
-                                    "sEmptyTable": "Ningún dato disponible en esta tabla",
-                                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                                    "oPaginate": {
-                                        "sFirst": "Primero",
-                                        "sLast": "Último",
-                                        "sNext": "Siguiente",
-                                        "sPrevious": "Anterior"
-                                    },
-                                }
-                            });
-                        });
-                        // Agregar evento change al select
-                        $("#selectTema").change(function() {
-                            // Enviar la petición Ajax al controlador
-                            $.ajax({
-                                type: "POST",
-                                url: "<?php echo base_url() . 'verXTema'; ?>",
-                                data: {
-                                    selectTema: $(this).val()
-                                },
-                                success: function(response) {
-                                    // Actualizar la tabla con los nuevos datos recibidos
-                                    $("#tablaLibros").html(response);
-                                }
-                            });
-                        });
-                    </script>
                 </div>
             </div>
         </div>

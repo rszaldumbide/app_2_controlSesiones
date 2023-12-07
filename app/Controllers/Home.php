@@ -55,7 +55,7 @@ class Home extends BaseController
         $navbar = view('Usuarios/layoutsUsuarios/navbar');
         $objLibros = new modelLibros();
 
-        $librosXTema = $_POST['selectTema'];
+        $librosXTema = $_GET['selectTema'];
 
         if ($librosXTema == "todos") {
             $respuesta = $objLibros->ListarLibros();

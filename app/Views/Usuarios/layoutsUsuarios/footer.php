@@ -19,8 +19,8 @@
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="<?php echo base_url() ?>assetsUsuario/js/scripts.js"></script>
-<script src="<?php echo base_url() ?>assetsUsuario/js/validaciones.js"></script>
+<script src="<?php echo base_url() ?>/assetsUsuario/js/scripts.js"></script>
+<script src="<?php echo base_url() ?>/assetsUsuario/js/validaciones.js"></script>
 <!-- Lottie -->
 <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 <!-- datatable -->
