@@ -52,10 +52,10 @@ class Home extends BaseController
 
     public function verXTema()
     {
-        $navbar = view('Usuarios/layoutsUsuarios/navbar');
+
         $objLibros = new modelLibros();
 
-        $librosXTema = $_GET['selectTema'];
+        $librosXTema = $this->request->getGet('selectTema');
 
         if ($librosXTema == "todos") {
             $respuesta = $objLibros->ListarLibros();
@@ -66,11 +66,12 @@ class Home extends BaseController
         $respuesta2 = $objLibros->ListarTemas();
 
         $data = [
-            "navbar" => $navbar,
             "datos" => $respuesta,
             "datos2" => $respuesta2
         ];
 
-        return view('Usuarios/layoutsUsuarios/header') . view('Usuarios/libros', $data) . view('Usuarios/layoutsUsuarios/footer');
+        /* var_dump($data); */
+        return $this->response->setJSON($data);
+        /* return view('Usuarios/librosxtema', $data); */
     }
 }

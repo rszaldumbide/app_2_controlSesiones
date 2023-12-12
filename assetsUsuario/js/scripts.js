@@ -21,25 +21,26 @@ $(document).ready(function () {
   });
 });
 
-function valor() {
-  $("select[name='selectTema']").change(function () {
-    let dato = $(this).val();
-    console.log(dato);
-
-    let url =
-      "http://localhost/app_2/librosPorTema?selectTema=" +
-      dato;
-
-    $.ajax({
-      type: "GET",
-      url: url, // Utiliza la URL con los datos incluidos
-      success: function (response) {
-        console.log(response);
-      },
-    });
-  });
-}
-
-$(document).ready(function () {
+$(document).ready(function(){
   valor();
 });
+
+function valor(){
+  $("select[name='selectTema']").change(function(){
+      let dato = $(this).val();
+      console.log("valor seleccionado: "+dato);
+      let datos = {
+          'dato':dato
+      };
+      $.ajax({
+          url:'librosPorTema',
+          type:'get',
+          data: dato,
+          success: function(response){
+              console.log(response);
+              $("#tbl tbody").html(response);
+              console.log('aqui estoy con exito');
+          }
+      });
+  });
+}
